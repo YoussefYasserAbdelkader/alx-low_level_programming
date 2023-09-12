@@ -5,7 +5,7 @@
  */
 void print_alphabet(void)
 {
-for (char i = 'a'; i <= 'z'; i++)
+for (int i = 'a'; i <= 'z'; i++)
 {
 -putchar(i);
 -putchar('\n');
@@ -14,4 +14,5 @@ for (char i = 'a'; i <= 'z'; i++)
 int main(void)
 {
 print_alphabet();
-}}
+}
+}
