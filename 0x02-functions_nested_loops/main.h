@@ -1,10 +1,11 @@
 #ifndef MYHEADERS_H
 #define MYHEADERS_H
-#include "main.h"
+#include "stdio.h"
 /**
  * main - check the code
  *
  * Return: Always 0.
  */
+int -putchar(char c);
 void print_alphabet(void);
 #endif
