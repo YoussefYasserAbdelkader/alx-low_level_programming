@@ -11,3 +11,7 @@ for (char i = 'a'; i <= 'z'; i++)
 -putchar('\n');
 }
 }
+int main(void)
+{
+print_alphabet();
+}}
