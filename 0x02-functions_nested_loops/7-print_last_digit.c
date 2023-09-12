@@ -12,5 +12,7 @@ n = -n;
 else
 n = n;
 int x = n % 10;
+if (x < 0)
+x = -x;
 putchar(x + 48);
 }
