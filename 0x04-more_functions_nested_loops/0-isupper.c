@@ -1,7 +1,9 @@
 #include "main.h"
 /**
-*Upper case letters return 1
-*else return 0
+* _isupper - uppercase letters
+* @c: char to check
+*
+* Return: 0 or 1
 */
 #include <stdio.h>
 
