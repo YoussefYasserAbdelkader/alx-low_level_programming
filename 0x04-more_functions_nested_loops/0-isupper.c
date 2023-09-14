@@ -2,7 +2,7 @@
 /**
 *Upper case letters return 1
 *else return 0
-**/
+*/
 #include <stdio.h>
 
 int _isupper(int c)
