@@ -1,9 +1,9 @@
 #include "main.h"
 /**
-* multuiply 2 int
+*mul - multuiply 2 int
 *@a : first int
 *@b : second int
-*Return : addiition of multiply
+*Return: addition of the multiplicattion
 */
 #include <stdio.h>
 int mul(int a, int b)
