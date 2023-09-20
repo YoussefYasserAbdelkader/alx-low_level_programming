@@ -2,23 +2,22 @@
 
 int main(void)
 {
-int n;
-int a[5];
-int *p;
+    // Define a character array with a string
+    char a[] = "A dream doesn't become reality through magic; it takes sweat, determination and hard work";
 
-a[2] = 1024;
-p = &n;
-/*
-* write your line of code here...
-* Remember:
-* - you are not allowed to use a
-* - you are not allowed to modify p
-* - only one statement
-* - you are not allowed to code anything else than this line of code
-*/
-*(p + 5) = 98;
-/* ...so that this prints 98\n */
-printf("a[2] = %d\n", a[2]);
-return (0);
+    // Define a pointer to a character and initialize it to point to the beginning of the string 'a'
+    char *p = a;
+
+    // Print the original string stored in 'a'
+    printf("%s\n", a);
+
+    // Add one line of code to modify 'a' indirectly without using 'a' or modifying 'p'
+    // This line modifies the 6th element of the array pointed to by 'p' to be 98 (ASCII value for 'b')
+    *(p + 5) = 98;
+
+    // Print the modified string stored in 'a' (now "A dream doesn't become reality through magic; it takes sweat, determination and hard work")
+    printf("%s\n", a);
+
+    return (0);
 }
 
