@@ -2,22 +2,30 @@
 
 int main(void)
 {
-    // Define a character array with a string
-    char a[] = "A dream doesn't become reality through magic; it takes sweat, determination and hard work";
+int n;
+int a[5];
+int *p;
 
-    // Define a pointer to a character and initialize it to point to the beginning of the string 'a'
-    char *p = a;
+/*Assign the value 1024 to the third element of array 'a'*/
+a[2] = 1024;
 
-    // Print the original string stored in 'a'
-    printf("%s\n", a);
+/*Create a pointer'p'and assign it the memory address of integer variable 'n'*/
+p = &n;
 
-    // Add one line of code to modify 'a' indirectly without using 'a' or modifying 'p'
-    // This line modifies the 6th element of the array pointed to by 'p' to be 98 (ASCII value for 'b')
-    *(p + 5) = 98;
+/*
+* Add your line of code here to set the value of 'a[2]' to 98 indirectly.
+* You are not allowed to use 'a', modify 'p', or add any other code.
+* Use pointer arithmetic to achieve this.
+*/
+*(p + 5) = 98;
 
-    // Print the modified string stored in 'a' (now "A dream doesn't become reality through magic; it takes sweat, determination and hard work")
-    printf("%s\n", a);
+/*
+* Print the modified value of 'a[2]'
+* Since 'a[2]' was modified indirectly through the pointer 'p',
+* this will print "a[2] = 98"
+*/
+printf("a[2] = %d\n", a[2]);
 
-    return (0);
+return (0);
 }
 
